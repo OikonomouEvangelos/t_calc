@@ -44,6 +44,9 @@ public class Main {
                     result = num1 / num2;
                 }
                 case '^' -> result = Math.pow(num1, 2);
+                case  '+' ->{
+                    result=num1+num2;
+                }
 
 
 
