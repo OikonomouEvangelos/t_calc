@@ -27,9 +27,13 @@ public class Main {
                 operator = scanner.next().charAt(0);
             }
 
-            System.out.print("Enter the second number: ");
-            num2 = scanner.nextDouble();
-
+            // Ζητάμε δεύτερο αριθμό ΜΟΝΟ αν δεν είναι τετράγωνο ή λογάριθμος
+            if (operator != '^' && operator != 'l') {
+                System.out.print("Enter the second number: ");
+                num2 = scanner.nextDouble();
+            } else {
+                num2 = 0; // placeholder, δεν χρειάζεται
+            }
             switch (operator) {
                 case '/' -> {
                     while (num2 == 0) {
@@ -39,6 +43,9 @@ public class Main {
                     }
                     result = num1 / num2;
                 }
+                case '^' -> result = Math.pow(num1, 2);
+
+
 
             }
 
