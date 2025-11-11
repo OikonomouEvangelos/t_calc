@@ -55,6 +55,10 @@ public class Main {
                     result = num1 * num2;
                }
 
+                case 'l' -> {
+                    result = Math.log10(num1);
+                }
+
 
             }
 
