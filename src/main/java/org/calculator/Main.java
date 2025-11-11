@@ -50,7 +50,10 @@ public class Main {
                 case  '+' ->{
                     result=num1+num2;
                 }
+               case'*' -> {
 
+                    result = num1 * num2;
+               }
 
 
             }
